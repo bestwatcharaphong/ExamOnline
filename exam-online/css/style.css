@@ -1,0 +1,383 @@
+body {
+	/*background-image:url('../images/background-texture.jpg');*/
+	background-color: #eef5f9;
+	/*background-color: #fff;*/
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+label {
+	font-weight: normal;
+}
+
+footer {
+	background-image: url('../images/pencil.png');
+	top: 15;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+p {
+	font-size: 1.05em;
+	line-height: 1.6;
+	color: #000;
+}
+
+footer p {
+	margin: 0;
+	padding: 25px 0;
+	color: #fff;
+}
+
+.content-login {
+	background: #fff;
+	margin-top: 40px;
+	padding-bottom: 10px;
+}
+
+.container-content {
+    margin: 0;
+    background: white;
+    min-height: calc(100vh - 125px);
+	margin-bottom: 10px;
+	margin-top: 52px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.has-shadow {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.error-content {
+    margin: 0;
+	background: #e9ebee;
+    min-height: calc(100vh - 125px);
+	margin-bottom: 10px;
+	margin-top: 60px;
+	max-width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#image-bg {
+	background-image: url('../images/apple1.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: 0px;
+	height: 100vh;
+	z-index: -10;
+	max-width: 100%;
+	/*max-height: 700px;*/
+	/*margin-top: 60px;*/
+}
+
+#image-bg-overlay {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.65);
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -5;
+	color: #fff;
+}
+
+#index-header {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 28pt;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+img {
+	height: 100px;
+	width: 100px;
+	vertical-align: middle;
+}
+
+#timer {
+	/*background: #FAFAD2;*/
+	margin-top: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 10px;
+}
+
+.select-boxes {
+	width: 280px;
+	text-align: center;
+}
+
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.form-add-user {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.link_logo {
+	color: color: #9cb733;
+	margin-left: 40px;
+}
+
+.link_logo:hover, .link_logo:focus {
+	color: #fbbb12;
+}
+
+.sm-nopad-right {
+	padding-top: 12px;
+}
+
+/*------------------------------------Side BAR-----------------------------------*/
+#sidebar-wrapper {
+	top: 50px;
+	left: -200px;
+	width: 200px;
+	background: rgba(0,0,0,1);
+	position: fixed;
+	height: 100%;
+	z-index: 1;
+}
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+}
+.sidebar-nav li {
+	text-indent: 0px;
+	line-height: 50px;
+}
+.sidebar-nav li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	font-weight: normal;
+	border-bottom: 1px solid #236D7F;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:hover {
+	background: #fbbb12;
+	color: #000;
+	text-decoration: none;
+}
+#sidebar-wrapper.sidebar-toggle {
+	transition: all 0.3s ease-out;
+	margin-left: -200px;
+}
+
+.sidebar-nav > .sidebar-selected > a,
+.sidebar-nav > .sidebar-selected > a:hover,
+.sidebar-nav > .sidebar-selected > a:focus {
+	color: black;
+	background-color: #fbbb12;
+}
+
+.wrappable {
+    white-space:normal;
+}
+
+/*------------------------------------------------------------------------------*/
+@media (min-width: 768px) {				/*หน้าจอใหญ่กว่าโทรศัพท์*/
+	#sidebar-wrapper.sidebar-toggle {
+		transition: 0s;
+		left: 200px;
+		margin-top: 20px;
+	}
+	#sidebar-wrapper {
+		background: rgba(0,0,0,0.8);
+	}
+
+	.container-content {
+		margin-left: 120px;
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 70px;
+		padding-top: 10px;
+	}
+
+	.content-login {
+		margin-top: 100px;
+		margin-left: 320px;
+		margin-right: 320px;
+		min-width: 300px;
+	}
+
+	footer {
+		margin-left: 100px;
+	}
+
+	.form-add {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.table-score {
+		width: 50%;
+	}
+
+	.form-add-user {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
+
+	.link_logo {
+		font-size: 20px;
+		font-weight: bolder;
+		margin-left: 0px;
+	}
+
+	.sm-nopad-right {
+		padding-top: 22px;
+	}
+}
+
+@media (min-width: 1500px) {			/*หน้าจอใหญ่กว่า notebook*/
+	.container-content {
+		margin-top: 80px;
+		margin-left: 0px;
+	}
+
+	.content-login {
+		margin-top: 130px;
+	}
+
+	#sidebar-wrapper.sidebar-toggle {
+		margin-top: 20px;
+	}
+}
+
+/*------------------------------------NAV BAR-----------------------------------*/
+.navbar-default {
+	background-color: #036;
+	border-radius: 0;
+	font-weight: bold;
+}
+.navbar-brand {
+	background-color: #036;
+	border-radius: 0;
+	font-weight: 600;
+}
+.navbar-default .navbar-brand,									/* สีตัวอักษรของ brand */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: #F9FFFF;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-default .navbar-nav > li > a:hover,						/*tab ถูก mouse ชี้อยู่ */
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #fbbb12;
+	color: black;
+}
+.navbar-default .navbar-nav > .active > a,						/*tab ที่เปิดอยู่ */
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: black;
+	background-color: #fbbb12;
+}
+.navbar-default .navbar-text {
+	color: #FFF;
+}
+
+.navbar-toggle {
+	float: left;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #00008C;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #00008C;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #EBF5FF;
+}
+/*----------------------------------END NAV BAR--------------------------------*/
+/*----------------------------------Toggle--------------------------------*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*----------------------------------END Toggle--------------------------------*/

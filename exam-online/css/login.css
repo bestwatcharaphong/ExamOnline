@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/mac2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.container {
+	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+.panel {
+	border: 0px;
+	background: rgba(81, 117, 99, 0.75);
+	color: white;
+	padding-top: 60px;
+	position: relative;
+	transition: 1s;
+	box-shadow: 10px 10px 5px rgba(6, 1, 1, 0.43);
+}
+
+h4 {
+	margin: 0;
+	padding: 0;
+	color: #F9DF05;
+}
+
+span {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: white;
+	display: inline-block;
+	text-align: center;
+}
+
+.lock {
+	position: absolute;
+	top: -50px;
+	width: 100px;
+	height: 100px;
+	line-height: 112px;
+	text-align: center;
+	left: 37%;
+	background: linear-gradient(DarkSlateGray, Cyan);
+	background: -webkit-linear-gradient(DarkSlateGray, Cyan);
+	background: -moz-linear-gradient(DarkSlateGray, Cyan);
+	border: 3px outset #F4E10A;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+	color: #fff;
+	-webkit-box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.5);
+	box-shadow: -10px 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.panel:hover {
+	background: rgba(81, 117, 99, 0.88);
+}
+
+.label {
+	position: absolute;
+	top: 10px;
+	left: -20px;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	transform: rotate(-20deg);
+	background: #6766a2;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.label2 {
+	position: absolute;
+	top: 0px;
+	left: -18px;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	transform: rotate(-27deg);
+	background: #8E4E81;
+	z-index: -1;
+}
+
+.link_logo {
+	color: color: #9cb733;
+}
+
+.link_logo:hover, .link_logo:focus {
+	color: #fbbb12;
+}
+
+.glyphicon {
+    font-size: 30px;
+}
+
+a {
+	color: #9cb733;
+}
+
+a:hover, a:focus {
+	color: #b6ca68;
+	text-decoration: underline;
+}
+
+.sm-nopad-right {
+	padding-top: 15px;
+}
+
+.form-control {
+	background-color: rgba(14, 14, 14, 0.35);
+	color: white;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+@media (min-width: 768px) {				/*หน้าจอใหญ่กว่าโทรศัพท์*/
+
+	.container {
+		margin-top: 140px;
+	}
+
+	.link_logo {
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+	.sm-nopad-right {
+		padding-top: 22px;
+	}
+
+}
+
+@media (min-width: 1500px) {			/*หน้าจอใหญ่กว่า notebook*/
+
+	.container {
+		margin-top: 240px;
+	}
+
+}

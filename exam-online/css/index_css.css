@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url('../images/apple1.jpg');
+	/*background: url('../images/home5.png');*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: 'Roboto Condensed', 'Prompt', sans-serif;
+}
+
+#header {
+	text-align: center;
+	color: white;
+	font-size: 28pt;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+
+img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: 0;
+}
+
+.container {
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+.panel {
+	border: 0px;
+	background: rgba(0, 0, 0, 0.0);
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.panel:hover {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+.link_logo {
+	color: color: #9cb733;
+	font-size: 30px;
+}
+
+.link_logo:hover, .link_logo:focus {
+	color: #fbbb12;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover, .a:focus {
+	color: #73ff2d;
+}
+
+.img-raspberry {
+	width: 66%;
+	height: 66%;
+	margin-top: 32px;
+}
+
+.login {
+	margin-top: 30px;
+	font-size: 24px;
+}
+
+
+@media (min-width: 768px) {				/*หน้าจอใหญ่กว่าโทรศัพท์*/
+
+	.container {
+		margin-top: 5px;
+	}
+
+	.panel {
+		padding-bottom: 10px;
+	}
+
+	.link_logo {
+		font-size: 36px;
+	}
+
+	.img-raspberry {
+		width: 88%;
+		height: 86%;
+		margin-top: 32px;
+		margin-bottom: 12px;
+	}
+
+	.login {
+		margin-top: 34px;
+		font-size: 26px;
+	}
+
+}
+
+@media (min-width: 1500px) {			/*หน้าจอใหญ่กว่า notebook*/
+
+	.container {
+		margin-top: 40px;
+	}
+
+	.img-raspberry {
+		width: 110%;
+		height: 110%;
+		margin-top: 90px;
+		margin-bottom: 12px;
+	}
+
+	.login {
+		margin-top: 84px;
+		font-size: 34px;
+	}
+
+}
